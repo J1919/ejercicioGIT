@@ -5,244 +5,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uniqluxury</title>
+    <link rel="stylesheet" href="./desk.css">
 </head>
 
 <body>
     <!-- barra de enavegacion -->
     <header class="navbar_header">
-
+        <div class="navbar_var">
             <div class="navbar_logo">
-                <a href="https://uniqluxury.com.mx/?lang=en">
-                    <img src="./IMG/logocomp.png" alt="logo de la pagina">
-                </a>
-            </div>
 
-            <div class="navbar_login">
-                <a href="/login">LOG IN</a>
-                <a href="/signup">SIGN UP</a>
-            </div>
-            <div class="navbar_idioma">
-                <a href="/esp">ESP</a>
-                <a href="/eng">ENG</a>
-            </div>
-
-            <div class="navbar_menu">
-                <a href="/menu">
-                    <img src="./IMG/simbolo_menu.png" alt="MENU">
-                </a>
+                <img id="logo" src="./IMG/logocomp.png" alt="Marca uniqluxury">
 
             </div>
-            <div class="navbar_browser">
-                <input type="text">
-            </div>
-        
-        <!-- seccion banner -->
-        <div>
-            <img src="./IMG/banner1.png" alt="banner">
-            <h3>Real Estate</h3>
-            <h4>Luxury</h4>
-            <a href="view_all_properties">View all properties</a>
-        </div>
-
-
-    </header>
-    <main>
-
-        <!-- properties for sale -->
-        <section>
-            <!-- galeri for sale -->
-            <div>
-                <div>
-                    <div>
-                        <a href="">
-                            <div>
-                                <img src="./IMG/france_merseilles.png" alt="">
-                                <span>
-                                    France
-                                </span>
-                                <span>
-                                    Merseilles
-                                </span>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div>
-                                <img src="./IMG/england_glasgow.png" alt="">
-                                <span>
-                                    England
-                                </span>
-                                <span>
-                                    Glasgow
-                                </span>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div>
-                                <img src="./IMG/scott_lorch.png" alt="">
-                                <span>
-                                    Scott
-                                </span>
-                                <span>
-                                    Lorch
-                                </span>
-                            </div>
+            <div id="content_navbar">
+                <div class="navbar_login">
+                    <div class="font_var" id="separacion_login"><a href="/login">LOG IN</a></div>
+                    <div class="font_var" id="separacion_singup"><a href="/signup">SIGN UP</a></div>
+                </div>
+                <div class="navbar_idioma">
+                    <div class="font_var" id="esp"><a href="/esp">ESP</a></div>
+                    <div class="font_var" id="eng"><a href="/eng">ENG</a></div>
+                    <div id="simbolo_menu" class="navbar_menu">
+                        <a href="/menu">
+                            <img src="./IMG/simbolo_menu.png" alt="MENU">
                         </a>
                     </div>
                 </div>
+
             </div>
+
+
+        </div>
+    </header>
+
+    <!-- seccion img_banner -->
+    <section class="banner">
+
+        <div class="banner_1_browser">
+
+            <input id="browser" type="text" placeholder="Ex. Villa Budapest">
+
+
+        </div>
+        <div id="banner_bottom">
+            <div class="banner_2_text">
+                <h3>Luxury</h3>
+                <h2>Real Estate</h2>
+            </div>
+            <div class="banner_3_button">
+                <img src="./IMG/flecha.png" alt="">
+                <a href="view_all_properties">View all properties</a>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <main>
+        <!-- properties for sale -->
+        <section class="section_sale">
+            <!-- galeri for sale -->
+
+            <!-- <div> -->
+            <div id="cont_gal_sale_1" class="galeria">
+                <a id="img1sale" class="imgsale_rent"
+                    href="https://uniqluxury.com.mx/real_estate_luxury/club-at-solaz-four-bedroom-villa/?lang=en">
+                    <div class="img_galeria">
+                        <span class="pais">France</span>
+                        <span class="lugar"> Merseilles</span>
+                    </div>
+                </a>
+
+                <a id="img2sale" class="imgsale_rent"
+                    href="https://uniqluxury.com.mx/real_estate_luxury/club-at-solaz-four-bedroom-villa/?lang=en">
+                    <div class="img_galeria">
+                        <span class="pais">England</span>
+                        <span class="lugar">Glasgow</span>
+                    </div>
+                </a>
+
+                <a id="img3sale" class="imgsale_rent"
+                    href="https://uniqluxury.com.mx/real_estate_luxury/club-at-solaz-four-bedroom-villa/?lang=en">
+                    <div class="img_galeria">
+                        <span class="pais">Scott</span>
+                        <span class="lugar">Lorch </span>
+                    </div>
+                </a>
+            </div>
+            <!-- </div> -->
+
             <!-- text for sale -->
-            <div>
+            <div class="cont_text_sale_rent">
                 <div>
                     <h5>Worldwide gallery</h5>
                 </div>
                 <div>
                     <h4>Properties for Sale </h4>
                 </div>
-                <div>
+                <div class="text_sale_rent">
                     <p>Wether it's an ultimate jetsetter location or a forever home, our experts have the expertise it
                         takes to advise you at every stage of the property cycle knowledgeably.</p>
                 </div>
-            </div>
-            <!-- nav for sale -->
-            <div>
-                <div>PREV</div>
-                <div>VIEW ALL PROPERTIES</div>
-                <div>NEXT</div>
-            </div>
-        </section>
-        <!-- properties for rent -->
+                <!-- nav for sale -->
+                <div class="cont_nav_art_rent_sale">
+                    <div class="boton_prev">
+                        <img src="./IMG/Vector1.png" alt="">
+                        <a class="boton" href="url">PREV</a>
+                    </div>
 
-        <section>
-            <!-- galeri for sale -->
-            <div>
-                <div>
-                    <div>
-                        <a href="">
-                            <div>
-                                <img src="./IMG/france_carcasone.png" alt="">
-                                <span>
-                                    France
-                                </span>
-                                <span>
-                                    Carcassonne
-                                </span>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div>
-                                <img src="./IMG/germany_munich.png" alt="">
-                                <span>
-                                    Germany
-                                </span>
-                                <span>
-                                    Munich
-                                </span>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div>
-                                <img src="./IMG/fran_clo.png" alt="">
-                                <span>
-                                    Fran
-                                </span>
-                                <span>
-                                    Clo
-                                </span>
-                            </div>
-                        </a>
+                    <a class="boton" href="url">
+                        <div class="bottom_med">View all properties</div>
+                    </a>
+                    <div class="boton_next">
+                        <a class="boton" href="url">NEXT</a>
+                        <img src="./IMG/Vector2.png" alt="">
                     </div>
                 </div>
             </div>
-            <!-- text for sale -->
-            <div>
+
+        </section>
+        <!-- properties for rent -->
+
+        <section class="seccion_rent">
+            <!-- galeri for rent -->
+
+            <div class="cont_text_sale_rent">
                 <div>
                     <h5>Worldwide gallery</h5>
                 </div>
                 <div>
                     <h4>Properties for Rent </h4>
                 </div>
-                <div>
+                <div class="text_sale_rent">
                     <p>In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to
                         knowledgeably advise you at every stage of the property cycle.</p>
                 </div>
-            </div>
-            <!-- nav for sale -->
-            <div>
-                <div>PREV</div>
-                <div>VIEW ALL PROPERTIES</div>
-                <div>NEXT</div>
-            </div>
-        </section>
-        <!-- developments -->
-        <section>
-            <div>
-                <div>
-                    <h4>Luxury properties</h4>
-                </div>
-                <div>
-                    <h3>Developments </h3>
+                <!-- nav for rent -->
+                <div class="cont_nav_art_rent_sale">
+                    <div class="boton_prev">
+                        <img src="./IMG/Vector1.png" alt="">
+                        <a class="boton" href="url">PREV</a>
+                    </div>
+
+                    <a class="boton" href="url">
+                        <div class="bottom_med">View all properties</div>
+                    </a>
+                    <div class="boton_next">
+                        <a class="boton" href="url">NEXT</a>
+                        <img src="./IMG/Vector2.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div>
-                <a href="url">
-                    <div><img src="./IMG/the_surf_row.png" alt=""></div>
-                    <div>
-                        <h5>The Surf Row<h5>
-                                <h6>Surfside</h6>
+            <!-- galeria rent -->
+
+            <div id="cont_gal_rent_1" class="galeria">
+                <a id="img1rent" class="imgsale_rent"
+                    href="https://uniqluxury.com.mx/real_estate_luxury/club-at-solaz-four-bedroom-villa/?lang=en">
+                    <div class="img_galeria">
+                        <span class="pais">France</span>
+                        <span class="lugar">Carcassonne</span>
                     </div>
                 </a>
 
-                <a href="url">
-                    <div><img src="./IMG/indigo_vero_beach.png" alt=""></div>
-                    <div>
-                        <h5>Indigo</h5>
+                <a id="img2rent" class="imgsale_rent"
+                    href="https://uniqluxury.com.mx/real_estate_luxury/club-at-solaz-four-bedroom-villa/?lang=en">
+                    <div class="img_galeria">
+                        <span class="pais">Germany</span>
+                        <span class="lugar">Munich</span>
+                    </div>
+                </a>
+
+                <a id="img3rent" class="imgsale_rent"
+                    href="https://uniqluxury.com.mx/real_estate_luxury/club-at-solaz-four-bedroom-villa/?lang=en">
+                    <div class="img_galeria">
+                        <span class="pais">Fran</span>
+                        <span class="lugar">Clo </span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- developments -->
+        <section id="seccion_developments">
+            <div id="cont_text_dev">
+                <div>
+                    <h5>Luxury properties</h5>
+                </div>
+                <div>
+                    <h4>Developments </h4>
+                </div>
+            </div>
+            <div id="cont_gal_dev_1">
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/the_surf_row.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">The Surf Row</span>
+
+                        <h6>Surfside</h6>
+                    </div>
+                </a>
+
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/indigo_vero_beach.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">Indigo</span>
+
                         <h6>Vero Beach</h6>
                     </div>
                 </a>
 
-                <a href="url">
-                    <div><img src="./IMG/rosewood_baha_mar.png" alt=""></div>
-                    <div>
-                        <h5>Rosewood - Baha Mar</h5>
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/rosewood_baha_mar.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">Rosewood - Baha Mar</span>
+
                         <h6>Nassau, the Bahamas</h6>
                     </div>
                 </a>
-                <a href="url">
-                    <div><img src="./IMG/the_astor_st_regis.png" alt=""></div>
-                    <div>
-                        <h5>St. Regis - The Astor Tower<h5>
-                                <h6>Brickell, Miami</h6>
-                    </div>
-                </a>
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/the_astor_st_regis.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">St. Regis - The Astor Tower</span>
 
-                <a href="url">
-                    <div><img src="./IMG/giralda_place.png" alt=""></div>
-                    <div>
-                        <h5>Giralda Place</h5>
-                        <h6>Coral Gables</h6>
-                    </div>
-                </a>
-
-                <a href="url">
-                    <div><img src="./IMG/the_william_st_regis.png" alt=""></div>
-                    <div>
-                        <h5>St. Regis - The William Tower</h5>
                         <h6>Brickell, Miami</h6>
                     </div>
                 </a>
 
-                <a href="url">
-                    <div><img src="./IMG/solterre_at_cockleshell_bay.png" alt=""></div>
-                    <div>
-                        <h5>Solterre at Cockleshell Bay</h5>
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/giralda_place.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">Giralda Place</span>
+
+                        <h6>Coral Gables</h6>
+                    </div>
+                </a>
+
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/the_william_st_regis.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">St. Regis - The William Tower</span>
+
+                        <h6>Brickell, Miami</h6>
+                    </div>
+                </a>
+
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/solterre_at_cockleshell_bay.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">Solterre at Cockleshell Bay</span>
+
                         <h6>St. Kitts and nevis</h6>
                     </div>
                 </a>
 
-                <a href="url">
-                    <div><img src="./IMG/urbin_coconut_grove.png" alt=""></div>
-                    <div>
-                        <h5>Urbin</h5>
+                <a class="box_img" href="url">
+                    <div class="img_dev"><img src="./IMG/urbin_coconut_grove.png" alt=""></div>
+                    <div class="text_img_dev">
+                        <span class="text_dev_2">Urbin</span>
+
                         <h6>Coconut Grove</h6>
                     </div>
                 </a>
@@ -250,59 +270,78 @@
             </div>
         </section>
         <!-- art-curation -->
-        <section>
-            <div>
+        <section id="seccion_art">
+            <div class="imgart">
+
                 <img src="./IMG/art.png" alt="">
             </div>
             <!-- text for art -->
-            <div>
+            <div class="cont_text_sale_rent">
+                <div id="logo_art">
+                    <img src="./IMG/LOGO_FOR_ART.png" alt="">
+                </div>
                 <div>
                     <h5>Services</h5>
                 </div>
                 <div>
                     <h4>Art Curation & Interior Design </h4>
                 </div>
-                <div>
+                <div class="text_sale_rent">
                     <p>In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to
                         knowledgeably advise you at every stage of the property cycle.</p>
                 </div>
+                <div class="cont_nav_art_rent_sale">
+                    <div class="boton_prev">
+                        <img src="./IMG/Vector1.png" alt="">
+                        <a class="boton" href="url">PREV</a>
+                    </div>
+
+                    <a class="boton" href="url">
+                        <div class="bottom_med">Contact us</div>
+                    </a>
+                    <div class="boton_next">
+                        <a class="boton" href="url">NEXT</a>
+                        <img src="./IMG/Vector2.png" alt="">
+                    </div>
+                </div>
             </div>
             <!-- nav for art -->
-            <div>
-                <div>PREV</div>
-                <div>Contact us</div>
-                <div>NEXT</div>
-            </div>
+
         </section>
 
     </main>
     <!-- BEFORE FOOTER -->
-    <div>
-        <!-- footer color space black -->
-        <div>footer color black</div>
-        <div>
-            <span>Join the list</span>
-            <span>
-                Unlock
-                <br>
-                the exclusive
-            </span>
-            <div>
-                <div> Name:</div>
-                <input type="text" name="input-join-the-list-name" placeholder="Ex.name@mail.com">
-                <button>
-                    Submit
-                </button>
+   
+        <div id="black">
+            <div class="footer_before">
+                <div id="text_bef">
+                    <span id="join">Join the list <br></span>
+                    <span id="Unlock">Unlock<br>the exclusive world </span>
+                </div>
+                <div id="form_footer">
+                    <div><span> Name:</span></div>
+                    <input id="form_name_email" type="text" name="input-join-the-list-name" placeholder="Juan Rivera">
+
+                    <div><span> Email:</span></div>
+                    <input id="form_name_email" type="text" name="input-join-the-list-name"
+                        placeholder="Ex.name@mail.com">
+
+
+                    <button id="boton_submit">Submit</button>
+                </div>
+
             </div>
+
         </div>
-    </div>
+    
 
     <Footer>
-        <div>
-            <div>
+        <div class="footer">
+            <div id="link_become">
+                <div><img src="./IMG/logocomp.png" alt=""></div>
                 <span>
                     <a href="become a new uniiq artist">
-                        Become a New Uniq Artist
+                        <br> Become a New Uniq Artist
                     </a>
                 </span>
                 <span>
@@ -311,7 +350,7 @@
                     </a>
                 </span>
             </div>
-            <div>
+            <div id="links_f">
                 <span>
                     <a href="url suits">Suites</a>
                 </span>
@@ -331,13 +370,13 @@
                     <a href="utl contac us">Contact us</a>
                 </span>
             </div>
-            <div>
+            <div id="contacto">
                 <span>Call Center</span>
                 <span>+52 55 6840 4000</span>
                 <span><a href="mailto:concierge@uniqluxury.com ">concierge@unluxury.com</a></span>
             </div>
         </div>
-        <div>
+        <div id="terminos">
             <span>Copyright © 2022</span>
         </div>
     </Footer>

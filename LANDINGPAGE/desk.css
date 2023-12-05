@@ -1,1 +1,667 @@
-style
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-gray_osc: #7E7E7E;
+    --color-gray_med: #464547;
+    --color-gray_claro: #B4B7B7;
+    --color-yellow: #DF991B;
+    --font-remp_BRANDON: Lato;
+    --font-remp_REGAL: Hedvig;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* START: NAVBAR */
+.navbar_header {
+    height: 123px;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    display: grid;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar_logo {
+    display: grid;
+    /*     background-color: #DF991B; */
+    align-items: center;
+}
+
+#logo {
+    height: 24px;
+    width: auto;
+}
+
+.navbar_var {
+    display: grid;
+    height: auto;
+    padding: 0px 38px 0px 120px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.font_var {
+    font-family: var(--font-remp_BRANDON);
+    font-size: 20px;
+    font-weight: 390;
+    text-decoration: none;
+}
+
+.font_var a {
+    text-decoration: none;
+}
+
+#content_navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* background-color: #464547; */
+    justify-content: end;
+    column-gap: 120px;
+}
+
+
+.navbar_login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    /* justify-items: end; */
+}
+
+#separacion_login {
+    padding-right: 10px;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+    justify-content: end;
+}
+
+#separacion_login a {
+    color: var(--color-gray_osc);
+}
+
+#separacion_singup a {
+    color: var(--color-white);
+}
+
+#esp a {
+    color: var(--color-gray_osc);
+}
+
+#eng a {
+    color: var(--color-white);
+}
+
+.navbar_idioma {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 39px;
+}
+
+#simbolo_menu {
+    padding-left: 39px;
+    justify-items: end;
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+/* END: NAVBAR */
+
+/* START BANNER */
+.banner {
+
+    height: 1080px;
+    width: 100%;
+    background-image: url(./IMG/banner1.png);
+    background-color: rgb(0 0 0 / 80%);
+    /* background: linear-gradient(270deg, #000 0%, #7E7E7E 100%);
+    mix-blend-mode: overlay; */
+
+    background-position: center;
+    background-size: cover;
+    background: hidden;
+    object-position: top -300px right 0;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+}
+
+h2 {
+    font-family: var(--font-remp_REGAL);
+    font-size: 80px;
+    font-weight: 500;
+    color: var(--color-white);
+    margin-left: 122px;
+}
+
+h3 {
+    font-family: var(--font-remp_BRANDON);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-gray_claro);
+    margin-left: 122px;
+}
+
+.banner_1_browser {
+    padding: 167px 122px 0px 0px;
+    justify-self: end;
+
+
+}
+
+#browser {
+    width: 529px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    background-image: url(./IMG/LUPA.png);
+    background-repeat: no-repeat;
+    background-position: 458px 20px;
+    font-size: 20px;
+    font-family: var(--font-remp_BRANDON);
+    padding-left: 44px;
+
+}
+
+#browser::placeholder {
+    color: var(--color-white);
+}
+
+#banner_bottom {
+    display: grid;
+    row-gap: 49px;
+}
+
+.banner_3_button a {
+    font-family: var(--font-remp_BRANDON);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 390;
+    color: var(--color-white);
+
+
+}
+
+.banner_3_button {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 407px;
+    height: 80px;
+    border-radius: 100px;
+    padding: 20px 0px 24px 20px;
+    background-color: transparent;
+    /*  background: linear-gradient(270deg, #000 0%, #7E7E7E 100%); */
+    border: 2px solid #FFF;
+    margin-left: 122px;
+    margin-bottom: 169px;
+
+
+
+}
+
+/* start main */
+
+/* properties for SALE -------------------------------- */
+.section_sale {
+    display: grid;
+    padding-top: 109px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5%;
+
+}
+
+/* prueba */
+
+
+/* galeria sale start----------------------------------- */
+#cont_gal_sale_1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+}
+
+#img1sale {
+    background-image: url(./IMG/france_merseilles.png);
+    grid-column: span 2;
+
+}
+
+#img2sale {
+    background-image: url(./IMG/england_glasgow.png);
+    grid-column: span 5;
+
+}
+
+#img3sale {
+    background-image: url(./IMG/scott_lorch.png);
+    grid-column: span 5;
+
+}
+
+.imgsale_rent {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: initial;
+    align-items: end;
+    /* text............................. */
+    text-decoration: none;
+    font-family: var(--font-remp_REGAL);
+    color: var(--color-white);
+}
+
+.img_galeria {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: end;
+    /* padding: 0 5% 0 5%; */
+
+}
+
+.lugar {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 0 3% 5%;
+}
+
+.pais {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 5%;
+}
+
+/* animacion ------------------*/
+.imgsale_rent:hover span {
+    background-color: var(--color-white);
+    width: 100%;
+    transition: 0.5s ease;
+    color: var(--color-black);
+
+}
+
+
+/* galeria sale end */
+/* star area texto galeria sale */
+h5 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-remp_BRANDON);
+    color: var(--color-yellow);
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: var(--font-remp_REGAL);
+    color: var(--color-black);
+    margin-bottom: 5%;
+
+}
+
+.cont_text_sale_rent {
+    margin: 0 10%;
+}
+
+.text_sale_rent p {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20%;
+}
+
+/* fin area texto galeria */
+
+
+
+/* seccion rent------------------------------------- */
+.seccion_rent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5%;
+
+}
+
+/* galeria rent start----------------------------------- */
+#cont_gal_rent_1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+}
+
+#img1rent {
+    background-image: url(./IMG/france_carcasone.png);
+    grid-column: span 5;
+
+}
+
+#img2rent {
+    background-image: url(./IMG/germany_munich.png);
+    grid-column: span 5;
+
+}
+
+#img3rent {
+    background-image: url(./IMG/fran_clo.png);
+    grid-column: span 2;
+
+}
+
+
+/* START SECCION DEVELOPMENTS----------------------------- */
+#seccion_developments {
+    display: grid;
+    
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+#cont_text_dev {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 5%;
+}
+
+#cont_gal_dev_1 {
+    display: grid;
+    object-fit: cover;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px 25px;
+    margin: 0% 5% 0% 5%;
+    margin-right: 5%;
+}
+
+.box_img {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    justify-content: center;
+}
+
+.box_img:hover {
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+.img_dev {
+    width: 100%;
+    height: 12vw;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.img_dev img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+
+}
+
+.text_img_dev {
+    display: grid;
+    align-content: center;
+    padding: 1vw 0 1vw 2vw;
+}
+
+h6 {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: var(--font-remp_REGAL);
+    color: var(--color-black);
+}
+
+.text_dev_2 {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-remp_REGAL);
+    color: var(--color-gray_osc);
+}
+
+/* services art_______________________________________________________ */
+#seccion_art {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 15%;
+
+}
+
+/* logo art */
+#logo_art {
+    margin-bottom: 5%;
+    overflow: hidden;
+
+}
+
+/* botones */
+.cont_nav_art_rent_sale {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+
+}
+
+.boton {
+    text-decoration: none;
+    font-family: var(--font-remp_BRANDON);
+    font-size: 18px;
+    color: var(--color-gray_med);
+}
+
+.boton_prev {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: start;
+    text-align: center;
+}
+
+.boton_next {
+    text-align: end;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: end;
+
+}
+
+.bottom_med {
+    text-align: center;
+    border-radius: 100px;
+    padding: 5px 30px;
+    border: 1px solid var(--color-black);
+
+    /* texto */
+    font-family: var(--font-remp_BRANDON);
+    font-size: 20px;
+    color: var(--color-black);
+
+}
+
+/* ----------------------------------------------------- */
+.imgart {
+
+    height: 60vh;
+    overflow: hidden;
+
+}
+
+.imgart img {
+    grid-column: span 10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 5%;
+
+}
+
+/* star footer before______________________________ */
+#black {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: 4;
+    background-color: var(--color-black);
+
+}
+
+
+.footer_before {
+    width: max-content;
+    display: grid;
+    width: 100%;
+    bottom: 50%;
+    position: absolute;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr;
+    background-color: #26282B;
+    margin-left: 5%;
+    margin-right: -5%;
+    column-gap: 15px;
+    padding: 2vw 5vw 0 2vw;
+}
+
+#text_bef {
+    padding-left: 5%;
+
+}
+
+#join {
+    font-size: 24px;
+    color: var(--color-yellow);
+}
+
+#Unlock {
+    font-size: 35px;
+    color: var(--color-white);
+}
+
+/* form footer */
+#form_footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 15px;
+    column-gap: 10px;
+    align-items: center;
+    font-family: var(--font-remp_BRANDON);
+    color: var(--color-white);
+
+
+}
+
+#form_name_email {
+    border-radius: 100px;
+    border: 1px solid var(--color-gray_osc);
+    height: 55px;
+    background-color: transparent;
+    padding-bottom: 2px;
+    padding-left: 25px;
+
+
+    font-size: 16px;
+}
+
+#boton_submit {
+    color: var(--color-yellow);
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid var(--color-yellow);
+    width: fit-content;
+    padding: 5px 30px;
+    font-size: 16px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: end;
+}
+
+#footer_before_0 {
+    position: relative;
+    z-index: 9999;
+}
+
+
+/* footer */
+.footer {
+    display: grid;
+    background-color: var(--color-black);
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 35px;
+    padding: 0% 5% 3% 5%;
+}
+
+#link_become {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: space-between;
+}
+
+#link_become a {
+    text-decoration: none;
+    font-family: var(--font-remp_BRANDON);
+    font-size: 20px;
+    color: var(--color-white);
+
+}
+
+#links_f {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 90px;
+}
+
+#links_f a {
+    text-decoration: none;
+    font-family: var(--font-remp_BRANDON);
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+#contacto {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: end;
+    text-align: right;
+    color: var(--color-white);
+
+}
+
+#contacto span {
+    font-size: 20px;
+    font-family: var(--font-remp_BRANDON);
+}
+
+#contacto a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+#terminos {
+    display: grid;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    text-align: center;
+    border-top: 1px solid var(--color-white);
+    padding: 2% 5% 3% 5%;
+    font-family: var(--font-remp_BRANDON);
+
+}
